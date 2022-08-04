@@ -49,8 +49,8 @@ header nav ul {
 }
 /* FOOTER STYLES START */
 footer {
-    background: var(--primary-color);
-    padding: 40px 35px;
+    /* background: var(--primary-color);
+    padding: 40px 35px; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -60,9 +60,12 @@ footer h2 {
     color: var(--secondary-color);
     font-size: 30px;
     margin: 0;
+    text-align: right;
+    border-right: 4px solid var(--secondary-color);
+    padding: 0 10px;
 }
 footer div {
-    margin: 7px 0;
+    /* margin: 7px 0; */
 }
 footer div ul {
     display: flex;
@@ -75,11 +78,49 @@ footer div ul li {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    color: var(--secondary-color);
+    text-decoration: underline;
 }
 footer a {
     color: var(--secondary-color);
 }
   /* END FOOTER STYLES */
+/* HERO STYLES START */
+.hero {
+    width: 100%;
+    height: 300px;
+    background-image: url('../images/hero-bg-1.jpg');
+    background-size: cover;
+    background-position: center;
+} 
+.hero h2 {
+    color: var(--secondary-color);
+    text-align: right;
+}
+/* END HERO STYLE */
+/* SECTION TITLE STYLES START */
+.section-title {
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin: 0;
+    text-align: right;
+    border-right: 4px solid var(--secondary-color);
+    padding: 0 10px;
+}
+section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+section div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+  
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {}
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
