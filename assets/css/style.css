@@ -95,10 +95,14 @@ footer a {
 } 
 .hero h2 {
     color: var(--secondary-color);
-    text-align: right;
+
 }
 /* END HERO STYLE */
 /* SECTION TITLE STYLES START */
+.flex-row {
+    display: flex;
+    /* flex-direction: column; */
+}
 .section-title {
     color: var(--secondary-color);
     font-size: 30px;
@@ -106,6 +110,7 @@ footer a {
     text-align: right;
     border-right: 4px solid var(--secondary-color);
     padding: 0 10px;
+    width: 150px;
 }
 section {
     display: flex;
@@ -116,9 +121,37 @@ section {
 section div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     list-style: none;
+}
+.work {
+    position: flex;
+}
+/* #work {
+    position: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+} */
+.work img {
+    height: 300px;
+    width: 600px;
+    object-fit: cover;
+    border: 2px solid var(--secondary-color);
+}
+figure {
+    position: relative;
+}
+figurecaption {
+    position: absolute;
+    left: 0px;
+    background-color: var(--secondary-color);
+    top: 50%;
+    font-size: 50px;
+    color: var(--primary-color);
+}
+body {
+    background-color: var(--tertiary-color)
 }
   
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
